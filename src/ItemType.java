@@ -7,5 +7,11 @@
 
 // Create an enum called ItemType
 public enum ItemType {
-  Audio, Visual, AudioMobile, VisualMobile
+  Audio("AU"), Visual("VI"), AudioMobile("AM"), VisualMobile("VM");
+
+  public final String code;
+
+  ItemType(String code){
+    this.code = code;
+  }
 }
