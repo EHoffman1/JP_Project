@@ -12,21 +12,21 @@ import java.util.Date;
 public interface Item {
 
   // A constant called manufacturer that would be set to “OracleProduction”
-  String manufacturer = "OracleProduction";
+  public final String manufacturer = "OracleProduction";
 
   // A method setProductionNumber that would have one integer parameter
-  void setProductionNumber(int productionNum);
+  public void setProductionNumber(int productionNum);
 
   // A method setName that would have one String parameter
-  void setName(String name);
+  public void setName(String name);
 
   // A method getName that would return a String
-  Product getName();
+  public String getName();
 
   // A method getManufactureDate that would return a Date
-  Date getManufacturerDate();
+  public Date getManufacturerDate();
 
   // A method getSerialNumber that would return an int
-  int getSerialNumber();
+  public int getSerialNumber();
 
 }

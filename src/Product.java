@@ -8,18 +8,22 @@
  * It also adds methods to set and get each field and to return the fields
  *************************************************************************************************/
 
-
+import java.lang.String;
 import java.util.Date;
 
 // Create an abstract type called Product that will implement the Item interface
-abstract class Product implements Item {
+abstract class Product implements Item, Comparable<Product> {
 
   private int serialNumber;
   private String manufacturer = Item.manufacturer;
   private Date manufacturedOn;
-  private String objectName;
-  private int currentProductionNumber = 1;
-  private java.util.Date date = new java.util.Date();
+  private String name;
+  static int currentProductionNumber = 1;
+
+
+  public Product(){
+
+  }
 
   // Add a constructor that will take in the name of the product
   // and set this to the field variable name
@@ -33,10 +37,10 @@ abstract class Product implements Item {
    * @param name String value assigned to objectName
    */
   public Product(String name) {
-    name = objectName;
+    this.name = name;
     serialNumber = currentProductionNumber;
     currentProductionNumber++;
-    manufacturedOn = date;
+    manufacturedOn = new Date();
   }
 
   // Complete the methods from the interface Item
@@ -46,6 +50,7 @@ abstract class Product implements Item {
    *
    * @param productionNum integer value for the production number of the product
    */
+  @Override
   public void setProductionNumber(int productionNum) {
     currentProductionNumber = productionNum;
   }
@@ -55,8 +60,9 @@ abstract class Product implements Item {
    *
    * @param name String value for the name of the product
    */
+  @Override
   public void setName(String name) {
-    objectName = name;
+    this.name = name;
   }
 
   /**
@@ -64,8 +70,9 @@ abstract class Product implements Item {
    *
    * @return String value assigned to name
    */
-  public Product getName() {
-    return this;
+  @Override
+  public String getName() {
+    return name;
   }
 
   /**
@@ -73,6 +80,7 @@ abstract class Product implements Item {
    *
    * @return Date assigned to the manufacturedOn field
    */
+  @Override
   public Date getManufacturerDate() {
     return manufacturedOn;
   }
@@ -82,6 +90,7 @@ abstract class Product implements Item {
    *
    * @return integer value assigned to serialNumber
    */
+  @Override
   public int getSerialNumber() {
     return serialNumber;
   }
@@ -97,7 +106,11 @@ abstract class Product implements Item {
     return "Manufacturer : " + manufacturer + "\n"
         + "Serial Number : " + serialNumber + "\n"
         + "Date : " + manufacturedOn + "\n"
-        + "Name : " + objectName;
+        + "Name : " + name;
+  }
+
+  public int compareTo(Product o) {
+    return name.compareTo(o.getName());
   }
 
 }
