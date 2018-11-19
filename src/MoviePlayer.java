@@ -13,9 +13,7 @@ public class MoviePlayer extends Product implements MultimediaControl {
   private Screen screen;
 
   /**
-   * constructor used to take in the name of the product and set to the field variable name. Assign
-   * a serial number from the currentProductionNumber. Incremented the currentProductionNumber in
-   * readiness for the next instance. Set manufacturedOn as the current date and time.
+   * constructor used to take in the name of the product and set to the field variable name
    *
    * @param name for product name.
    */
