@@ -18,9 +18,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
   // The constructor should call its parents constructor and also setup the media type.
 
   /**
-   * constructor used to take in the name of the product and set to the field variable name. Assign
-   * a serial number from the currentProductionNumber. Incremented the currentProductionNumber in
-   * readiness for the next instance. Set manufacturedOn as the current date and time.
+   * Taking the name of a product and setting it to its variable
    *
    * @param name for product name.
    */
