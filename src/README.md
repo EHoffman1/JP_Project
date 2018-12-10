@@ -6,7 +6,7 @@
 
 ## Class Diagram
 
-![Class Diagram](docs/diagrams/ClassDiagram.png)
+![Class Diagram](docs/ClassDiagram.png)
 
 ## Getting Started
 In order to run the program, either download the zip of this repository, or download all the files in the src. Once downloaded, open up IntelliJ or any similar IDE and create a new project with the zip or downloaded src files. You can then run the main class which will test the classes of the program.
