@@ -22,10 +22,10 @@ In order to run the program
 
 # Acknowledgements
 
-• Professor Vanselow
-• Allen Telson
-• Oracle Academy
-• Google Style Guides
+* Professor Vanselow
+* Allen Telson
+* Oracle Academy
+* Google Style Guides
 
 
 
