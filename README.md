@@ -2,7 +2,7 @@
 
 ## Documentation
 
-[JavaDocs]
+[JavaDocs](
 
 ## Class Diagram
 
