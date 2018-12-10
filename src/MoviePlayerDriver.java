@@ -5,10 +5,9 @@
  * DESC: Driver class to test MoviePlayer class
  *************************************************************************************************/
 
-
 public class MoviePlayerDriver {
 
-  public static void testMoviePlayer(){
+  public static void testMoviePlayer() {
 
   }
 }

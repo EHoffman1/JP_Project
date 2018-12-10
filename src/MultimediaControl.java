@@ -5,27 +5,17 @@
  * DESC: MultimediaControl interface to create core methods of a media player
  *************************************************************************************************/
 
+/**
+ * Interface for different controls to use with movies, audio players, etc.
+ */
 public interface MultimediaControl {
 
-  /**
-   * definition of a method
-   */
   public void play();
 
-  /**
-   * definition of a method
-   */
   public void stop();
 
-  /**
-   * definition of a method
-   */
   public void previous();
 
-  /**
-   * definition of a method
-   */
   public void next();
-
 
 }

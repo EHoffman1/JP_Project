@@ -5,7 +5,10 @@
  * DESC: MonitorType enum that stores different types of monitors
  *************************************************************************************************/
 
-public enum MonitorType {
+/**
+ * Enum that creates different types of monitors.
+ */
+enum MonitorType {
 
   // Create an enum called MonitorType
 

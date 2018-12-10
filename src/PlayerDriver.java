@@ -1,12 +1,15 @@
 /**************************************************************************************************
  * Author: Eric Hoffman
  * FILE: PlayerDriver.java
- * Date: 11/10/2018
+ * Date: 11/12/2018
  * DESC: PlayerDriver tests all driver classes
  *************************************************************************************************/
 
 public class PlayerDriver {
 
+  /**
+   * Driver to test multiple media players.
+   */
   public static void testPlayer() {
 
     MoviePlayer mp1 = new MoviePlayer("DBPOWER MK101", new Screen("720x480",

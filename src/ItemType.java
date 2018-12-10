@@ -6,6 +6,10 @@
  *************************************************************************************************/
 
 // Create an enum called ItemType
+
+/**
+ * Enum for various product/item types.
+ */
 public enum ItemType {
   AUDIO("AU"), VISUAL("VI"), AUDIO_MOBILE("AM"), VISUAL_MOBILE("VM");
 
@@ -15,6 +19,11 @@ public enum ItemType {
     this.code = code;
   }
 
+  /**
+   * Method that gets the item type code.
+   *
+   * @return item type code
+   */
   String getCode() {
     return code;
   }

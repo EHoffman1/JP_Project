@@ -18,14 +18,16 @@ public class AudioPlayer extends Product implements MultimediaControl {
   // The constructor should call its parents constructor and also setup the media type.
 
   /**
-   * Taking the name of a product and setting it to its variable
+   * Constructor for audio player
+   * Taking the name of a product and setting it to its variable.
    *
    * @param name for product name.
+   * @param audioSpecification String type of audio type
    */
   public AudioPlayer(String name, String audioSpecification) {
     super(name);
     this.audioSpecification = audioSpecification;
-    this.mediaType = mediaType;
+    this.mediaType = ItemType.AUDIO;
   }
 
   @Override
@@ -53,8 +55,12 @@ public class AudioPlayer extends Product implements MultimediaControl {
   }
 
 
-  // Create a toString method that will display the superclasses
-  // toString method, but also add rows for Audio Spec and Type.
+  /**
+   * Create a toString method that will display the superclasses
+   * toString method, but also add rows for Audio Spec and Type.
+   *
+   * @return toString method from the parent class
+   */
   public String toString() {
     return super.toString() + "\n" + "Audio Spec : " + audioSpecification + "\n" + "Type : "
         + mediaType;

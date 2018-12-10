@@ -1,3 +1,10 @@
+/**************************************************************************************************
+ * Author: Eric Hoffman
+ * FILE: Main.java
+ * Date: 11/10/2018
+ * DESC: Main class to test functionality of other classes.
+ *************************************************************************************************/
+
 import java.util.ArrayList;
 
 import java.util.Collections;
@@ -5,9 +12,6 @@ import java.util.Collections;
 
 public class Main {
 
-  /**
-   *   test the functionality of the program.
-   */
   public static void main(String[] args) {
 
     // Write one line of code to create an ArrayList of products
@@ -25,6 +29,11 @@ public class Main {
 
   // Complete the header for the testCollection method here
 
+  /**
+   * Method that tests the creation of the collection of media players.
+   *
+   * @return Array list of the media players that were created
+   */
   public static ArrayList<Product> testCollection() {
 
     AudioPlayer a1 = new AudioPlayer("iPod Mini", "MP3");
@@ -45,6 +54,12 @@ public class Main {
   }
 
   // Create print method here
+
+  /**
+   * Method that prints out the array list of media players.
+   *
+   * @return list of media players
+   */
   private static <E> void print(ArrayList<E> productList) {
     for (E p :
         productList) {

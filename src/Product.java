@@ -14,14 +14,17 @@ import java.util.Date;
 // Create an abstract type called Product that will implement the Item interface
 abstract class Product implements Item, Comparable<Product> {
 
-  private int serialNumber;
-  private String manufacturer = Item.manufacturer;
-  private Date manufacturedOn;
-  private String name;
+  int serialNumber;
+  String manufacturer = Item.manufacturer;
+  Date manufacturedOn;
+  String name;
   static int currentProductionNumber = 1;
 
 
-  public Product(){
+  /**
+   * Empty constructor for product.
+   */
+  public Product() {
 
   }
 
@@ -32,7 +35,7 @@ abstract class Product implements Item, Comparable<Product> {
   // Set manufacturedOn as the current date and time.
 
   /**
-   * Assigning each variable to their parameter type
+   * Constructor Assigning each variable to their parameter type.
    *
    * @param name String value assigned to objectName
    */
@@ -46,17 +49,19 @@ abstract class Product implements Item, Comparable<Product> {
   // Complete the methods from the interface Item
 
   /**
-   * public method to set the current production number
+   * public method to set the current production number.
    *
-   * @param productionNum integer value for the production number of the product
+   * @param productionNum integer value for the production number of the product.
    */
   @Override
   public void setProductionNumber(int productionNum) {
+    // shows as bug, but I couldn't figure out any way
+    // to fix that would also work for the assignment
     currentProductionNumber = productionNum;
   }
 
   /**
-   * public method to set the field name value
+   * public method to set the field name value.
    *
    * @param name String value for the name of the product
    */
@@ -66,7 +71,7 @@ abstract class Product implements Item, Comparable<Product> {
   }
 
   /**
-   * public method returning the name
+   * public method returning the name.
    *
    * @return String value assigned to name
    */
@@ -76,7 +81,7 @@ abstract class Product implements Item, Comparable<Product> {
   }
 
   /**
-   * public method returning the date of manufacturing
+   * public method returning the date of manufacturing.
    *
    * @return Date assigned to the manufacturedOn field
    */
@@ -86,9 +91,9 @@ abstract class Product implements Item, Comparable<Product> {
   }
 
   /**
-   * public method to return the serial number of the product
+   * public method to return the serial number of the product.
    *
-   * @return integer value assigned to serialNumber
+   * @return integer value assigned to serialNumber.
    */
   @Override
   public int getSerialNumber() {
@@ -98,7 +103,7 @@ abstract class Product implements Item, Comparable<Product> {
   // Add a toString method that returns Manufacturer, Serial Number, Date, and Name
 
   /**
-   * public string method to return each field value
+   * public string method to return each field value.
    *
    * @return Each string, integer, and date value assigned to each field
    */

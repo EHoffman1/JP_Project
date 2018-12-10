@@ -9,6 +9,9 @@
 import java.util.Date;
 
 // Create an interface called Item
+/**
+ * Interface Item that includes details for the Product class.
+ */
 public interface Item {
 
   // A constant called manufacturer that would be set to “OracleProduction”

@@ -9,6 +9,9 @@
 // and print out their details to the console.
 public class AudioPlayerDriver {
 
+  /**
+   * Driver for testing audio player.
+   */
   public static void testAudioPlayer() {
 
     AudioPlayer ipod = new AudioPlayer("iPod Mini", "MP3");
