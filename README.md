@@ -2,7 +2,7 @@
 
 ## Documentation
 
-![JavaDocs]((https://EHoffman1.github.io/JP_Project/docs/index.html)
+![JavaDocs]((https://EHoffman1.github.io/JP_Project/docs/index-files/index.html)
 
 ## Class Diagram
 
