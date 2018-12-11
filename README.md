@@ -2,7 +2,7 @@
 
 ## Documentation
 
-![JavaDocs](https://ehoffman1.github.io/JP_Project/)
+[JavaDocs](https://ehoffman1.github.io/JP_Project/)
 
 ## Class Diagram
 
