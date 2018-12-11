@@ -1,5 +1,7 @@
 # JP_Project
 
+This project was created as a final project for my Object Oriented Programming class(COP 3003) at Florida Gulf Coast University. The project is based off an Oracle Production scenario to create a production line of multimedia devices like music and movie players. My project is a template in Java for creating and recording all future production line items. 
+
 ## Documentation
 
 [JavaDocs](https://ehoffman1.github.io/JP_Project/)
