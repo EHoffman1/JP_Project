@@ -2,7 +2,7 @@
 
 ## Documentation
 
-![JavaDocs](file:///C:/Users/emhof/OneDrive%20-%20Florida%20Gulf%20Coast%20University/Alpha/docs/index.html)
+[JavaDocs]((https://EHoffman1.github.io/JP_Project/docs/index.html)
 
 ## Class Diagram
 
